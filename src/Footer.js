@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <div>
-        <img src="#" alt="Little Lemon Logo" />
+        <img src="/images/logo .svg" alt="Little Lemon Logo" />
       </div>
 
       <div>
