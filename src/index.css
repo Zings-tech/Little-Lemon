@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-green: #495E57;
+  --accent-yellow: #F4CE14;
+  --light-bg: #EDEFEE;
+  --dark-text: #333333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+nav {
+  background-color: var(--primary-green);
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent-yellow);
+}
+
+.hero {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--accent-yellow);
+}
+
+button {
+  background-color: var(--accent-yellow);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+section {
+  padding: 3rem 2rem;
 }

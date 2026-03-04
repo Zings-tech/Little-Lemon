@@ -1,10 +1,14 @@
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './pages/HomePage';
+import BookingPage from './pages/BookingPage';
+
 function Main() {
   return (
     <main>
-      <section>
-        <h2>Reserve a Table</h2>
-        <p>Book your special occasion with us.</p>
-      </section>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </main>
   );
 }
