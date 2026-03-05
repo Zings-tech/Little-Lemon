@@ -10,7 +10,7 @@ function Specials() {
         <div className="card">
           <div className="card-image">Image</div>
           <h4>Greek Salad</h4>
-          <p>$12.99</p>
+          <p className="price">$12.99</p>
           <p>Lorem ipsum dolor sit amet.</p>
           <button>Order a delivery</button>
         </div>
@@ -18,7 +18,7 @@ function Specials() {
         <div className="card">
           <div className="card-image">Image</div>
           <h4>Bruschetta</h4>
-          <p>$7.99</p>
+          <p className="price">$7.99</p>
           <p>Lorem ipsum dolor sit amet.</p>
           <button>Order a delivery</button>
         </div>
@@ -26,7 +26,7 @@ function Specials() {
         <div className="card">
           <div className="card-image">Image</div>
           <h4>Lemon Dessert</h4>
-          <p>$5.99</p>
+          <p className="price">$5.99</p>
           <p>Lorem ipsum dolor sit amet.</p>
           <button>Order a delivery</button>
         </div>

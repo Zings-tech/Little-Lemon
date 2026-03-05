@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <footer className="footer">
-      <div>Logo</div>
+      <div className="footer-logo">Logo</div>
 
-      <div>
+      <div className="navigation">
         <h4>Navigation</h4>
         <p>Home</p>
         <p>About</p>
@@ -13,14 +13,14 @@ function Footer() {
         <p>Login</p>
       </div>
 
-      <div>
+      <div className="contact">
         <h4>Contact</h4>
         <p>Address</p>
         <p>Phone</p>
         <p>Email</p>
       </div>
 
-      <div>
+      <div className="social-media-links">
         <h4>Social Media Links</h4>
         <p>Facebook</p>
         <p>Instagram</p>

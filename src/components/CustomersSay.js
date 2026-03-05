@@ -6,24 +6,28 @@ function CustomersSay() {
       <div className="testimonial-cards">
         <div className="testimonial">
           <p>⭐⭐⭐⭐⭐</p>
+          <img className="profile-pic" />
           <p>Name</p>
           <p>Review text</p>
         </div>
 
         <div className="testimonial">
           <p>⭐⭐⭐⭐</p>
+          <img className="profile-pic" />
           <p>Name</p>
           <p>Review text</p>
         </div>
 
         <div className="testimonial">
           <p>⭐⭐⭐⭐⭐</p>
+          <img className="profile-pic" />
           <p>Name</p>
           <p>Review text</p>
         </div>
 
         <div className="testimonial">
           <p>⭐⭐⭐⭐</p>
+          <img className="profile-pic" />
           <p>Name</p>
           <p>Review text</p>
         </div>
