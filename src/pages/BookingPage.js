@@ -1,8 +1,12 @@
-function BookingPage() {
+import BookingForm from "./BookingForm.js"
+
+function BookingPage({ availableTimes, dispatch }) {
   return (
-    <section>
+    <section className="booking-page">
       <h1>Reserve a Table</h1>
-      <p>Booking form will go here.</p>
+      <BookingForm
+        availableTimes={availableTimes}
+        dispatch={dispatch}/>
     </section>
   );
 }
