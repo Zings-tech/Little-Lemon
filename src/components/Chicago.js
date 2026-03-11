@@ -1,3 +1,5 @@
+import "../styles/Chicago.css"
+
 function Chicago() {
   return (
     <section className="about">
@@ -5,8 +7,7 @@ function Chicago() {
         <h2>Little Lemon</h2>
         <h4>Chicago</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials, inspired by the family's heritage in the Mediterranean.
         </p>
       </div>
 

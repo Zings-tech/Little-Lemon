@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './pages/HomePage';
 import BookingPage from './pages/BookingPage';
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import { initializeTimes, updateTimes } from "./utils/timesReducer";
 
 function Main() {

@@ -1,3 +1,5 @@
+import "../styles/CallToAction.css"
+
 function CallToAction() {
   return (
     <section className="hero">
@@ -5,11 +7,10 @@ function CallToAction() {
         <h1>Little Lemon</h1>
         <h3>Chicago</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. From our famous hummus to our charcoal-grilled kebabs, every dish is crafted with fresh, local ingredients and a touch of Chicago soul
         </p>
 
-        <button>Reserve a Table</button>
+        <button>Start Free Trial</button>
       </div>
 
       <div className="hero-image">

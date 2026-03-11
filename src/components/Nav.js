@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
+import "../styles/Nav.css";
 
 function Nav() {
   return (
     <nav>
       <div className="nav-container">
-        <div className="logo">LOGO</div>
-
-        <div className="nav-container">
         <div className="logo">LOGO</div>
 
         <ul className="nav-links">
@@ -17,7 +15,6 @@ function Nav() {
           <li><Link to="/">Order Online</Link></li>
           <li><Link to="/">Login</Link></li>
         </ul>
-      </div>
       </div>
     </nav>
   );

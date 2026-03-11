@@ -1,0 +1,74 @@
+.booking-form {
+  display: grid;
+  max-width: 400px;
+  gap: 1.5rem;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background-color: #EDEFEE; /* Light background */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.booking-form label {
+  font-weight: 800;
+  color: #495E57; /* Forest Green */
+  font-size: 1.1rem;
+  margin-bottom: -1rem; /* Brings label closer to its input */
+}
+
+/* Input, Select, and Number styling */
+.booking-form input, 
+.booking-form select {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  background-color: white;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Focusing effect for accessibility */
+.booking-form input:focus, 
+.booking-form select:focus {
+  outline: none;
+  border: 2px solid #F4CE14; /* Lemon Yellow border on focus */
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #F4CE14; /* Lemon Yellow */
+  color: #333;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e5bf0d;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Specific styling for the number input */
+input[type="number"] {
+  width: 100%;
+}
+
+/* Mobile Tweak */
+@media (max-width: 480px) {
+  .booking-form {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}

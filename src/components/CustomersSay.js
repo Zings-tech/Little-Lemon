@@ -1,3 +1,5 @@
+import "../styles/CustomersSay.css"
+
 function CustomersSay() {
   return (
     <section className="testimonials">
