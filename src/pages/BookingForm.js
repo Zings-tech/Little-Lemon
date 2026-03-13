@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/BookingForm.css"
+import { submitAPI } from '../utils/tempAPI.js';
 
 function BookingForm({ availableTimes, dispatch }) {
 
@@ -9,25 +10,34 @@ function BookingForm({ availableTimes, dispatch }) {
   const [occasion, setOccasion] = useState("Birthday");
 
   const handleDateChange = (e) => {
+    const selectedDate = e.target.value;
     setDate(e.target.value);
 
     dispatch({
       type: "UPDATE_TIMES",
-      date: e.target.value
+      date: selectedDate
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    const formData = {
-      date,
-      time,
-      guests,
-      occasion
+
+// ... inside your handleSubmit function ...
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      const formData = {
+        date,
+        time,
+        guests,
+        occasion
+      };
+
+    const success = submitAPI(formData);
+    if (success) {
+        alert("Reservation confirmed!");
+    }
     };
 
-  };
 
   return (
     <form
@@ -77,5 +87,6 @@ function BookingForm({ availableTimes, dispatch }) {
     </form>
   );
 }
+
 
 export default BookingForm;

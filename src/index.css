@@ -1,20 +1,8 @@
-
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
-  background-color: var(--light-bg);
-  color: var(--dark-text);
-}
-
-h1, h2, h3 {
-  margin: 0;
 }
 
 section {
   padding: 60px 80px;
-}
-
-header {
-  background-color: white;
-  padding: 20px 80px;
 }
