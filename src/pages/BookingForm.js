@@ -20,8 +20,6 @@ function BookingForm({ availableTimes, dispatch }) {
   };
 
 
-
-// ... inside your handleSubmit function ...
     const handleSubmit = (e) => {
       e.preventDefault();
 

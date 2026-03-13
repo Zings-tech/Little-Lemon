@@ -1,4 +1,4 @@
-import { fetchAPI } from '../utils/tempAPI.js'; // Import the local version
+import { fetchAPI } from '../utils/tempAPI.js';
 
 export function initializeTimes() {
     return fetchAPI(new Date());
