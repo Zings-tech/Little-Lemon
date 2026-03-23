@@ -1,8 +1,7 @@
 import { useState } from "react";
-import "../styles/BookingForm.css"
-import { submitAPI } from '../utils/tempAPI.js';
+import "../styles/BookingForm.css";
 
-function BookingForm({ availableTimes, dispatch }) {
+function BookingForm({ availableTimes, dispatch, submitForm }) {
 
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
@@ -30,10 +29,8 @@ function BookingForm({ availableTimes, dispatch }) {
         occasion
       };
 
-    const success = submitAPI(formData);
-    if (success) {
-        alert("Reservation confirmed!");
-    }
+    submitForm(formData);
+
     };
 
 
