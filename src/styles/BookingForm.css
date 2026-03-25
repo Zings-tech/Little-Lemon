@@ -4,21 +4,19 @@
   gap: 1.5rem;
   margin: 4rem auto;
   padding: 2.5rem;
-  background-color: #EDEFEE; /* Light background */
+  background-color: #EDEFEE;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Label styling */
 .booking-form label {
   font-weight: 800;
-  color: #495E57; /* Forest Green */
+  color: #495E57;
   font-size: 1.1rem;
-  margin-bottom: -1rem; /* Brings label closer to its input */
+  margin-bottom: -1rem;
 }
 
-/* Input, Select, and Number styling */
-.booking-form input, 
+.booking-form input,
 .booking-form select {
   padding: 0.8rem;
   border-radius: 8px;
@@ -30,16 +28,15 @@
   box-sizing: border-box;
 }
 
-/* Focusing effect for accessibility */
-.booking-form input:focus, 
+.booking-form input:focus,
 .booking-form select:focus {
   outline: none;
-  border: 2px solid #F4CE14; /* Lemon Yellow border on focus */
+  border: 2px solid #F4CE14;
 }
 
-/* Submit Button */
+
 .submit-btn {
-  background-color: #F4CE14; /* Lemon Yellow */
+  background-color: #F4CE14;
   color: #333;
   border: none;
   padding: 1rem;
@@ -60,15 +57,18 @@
   transform: translateY(0);
 }
 
-/* Specific styling for the number input */
 input[type="number"] {
   width: 100%;
 }
 
-/* Mobile Tweak */
 @media (max-width: 480px) {
   .booking-form {
     margin: 2rem 1rem;
     padding: 1.5rem;
   }
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
 }

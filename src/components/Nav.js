@@ -3,7 +3,7 @@ import "../styles/Nav.css";
 
 function Nav() {
   return (
-    <nav>
+    <nav aria-label="Main navigation">
       <div className="nav-container">
         <div className="logo">LOGO</div>
 

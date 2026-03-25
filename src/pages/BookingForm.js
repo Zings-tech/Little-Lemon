@@ -18,9 +18,22 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
     });
   };
 
+    const isFormValid = () => {
+    return (
+      date !== "" &&
+      time !== "" &&
+      guests >= 1 &&
+      guests <= 10 &&
+      occasion !== ""
+    );
+  };
+
+    const today = new Date().toISOString().split("T")[0];
 
     const handleSubmit = (e) => {
       e.preventDefault();
+
+      if (!isFormValid()) return;
 
       const formData = {
         date,
@@ -43,6 +56,8 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
       <input
         type="date"
         id="res-date"
+        min={today}
+        aria-label="Choose reservation date"
         value={date}
         onChange={handleDateChange}
       />
@@ -50,6 +65,7 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
       <label htmlFor="res-time">Choose time</label>
       <select
         id="res-time"
+        aria-label="Choose reservation time"
         value={time}
         onChange={(e) => setTime(e.target.value)}
       >
@@ -64,21 +80,34 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
         id="guests"
         min="1"
         max="10"
+        aria-label="Choose number of guests"
         value={guests}
         onChange={(e) => setGuests(e.target.value)}
+        required
       />
 
       <label htmlFor="occasion">Occasion</label>
       <select
         id="occasion"
+        aria-label="Choose occasion"
         value={occasion}
         onChange={(e) => setOccasion(e.target.value)}
+        required
       >
         <option>Birthday</option>
         <option>Anniversary</option>
       </select>
 
-      <button type="submit" className="submit-btn">Submit Reservation</button>
+      {!isFormValid() && (
+        <p className="error-text">Please fill all fields correctly.</p>
+      )}
+
+      <button
+        type="submit"
+        className="submit-btn"
+        aria-label="Submit reservation form"
+        disabled={!isFormValid()}
+        >Submit Reservation</button>
     </form>
   );
 }

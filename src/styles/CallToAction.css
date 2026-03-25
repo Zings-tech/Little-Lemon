@@ -47,7 +47,6 @@
 
 .hero-text button:hover {
   background-color: #e5bf0d;
-  transform: scale(1.05);
 }
 
 .hero-image {
