@@ -12,8 +12,12 @@ function Chicago() {
       </div>
 
       <div className="about-images">
-        <div className="image-placeholder">Image</div>
-        <div className="image-placeholder">Image</div>
+        <div className="image-placeholder">
+          <img alt="restaurant" src="../images/restaurant.jpg"/>
+        </div>
+        <div className="image-placeholder">
+          <img alt="" src="../images/restaurant chef B.jpg"/>
+        </div>
       </div>
     </section>
   );

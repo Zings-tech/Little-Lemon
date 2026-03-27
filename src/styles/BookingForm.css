@@ -61,14 +61,32 @@ input[type="number"] {
   width: 100%;
 }
 
-@media (max-width: 480px) {
-  .booking-form {
-    margin: 2rem 1rem;
-    padding: 1.5rem;
-  }
-}
-
 .error-text {
   color: red;
   font-size: 0.9rem;
 }
+
+@media (max-width: 786px) {
+  .booking-form {
+    max-width: 100%;
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .booking-form label {
+    font-size: 1rem;
+  }
+
+  .booking-form input,
+  .booking-form select {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+}
+

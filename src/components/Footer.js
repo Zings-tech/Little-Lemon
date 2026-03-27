@@ -3,7 +3,9 @@ import "../styles/Footer.css"
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-logo">Logo</div>
+      <div className="footer-logo">
+        <img alt="little-lemon-pic" src="../images/logo .svg"/>
+      </div>
 
       <div className="navigation">
         <h4>Navigation</h4>

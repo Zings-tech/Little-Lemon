@@ -58,7 +58,7 @@
   margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .testimonial-cards {
     grid-template-columns: 1fr;
     padding: 0 2rem;

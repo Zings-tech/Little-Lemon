@@ -14,7 +14,9 @@ function CallToAction() {
       </div>
 
       <div className="hero-image">
-        <div className="image-placeholder">Image</div>
+        <div className="image-placeholder">
+          <img alt="restaurant-food" src="../images/restauranfood.jpg"/>
+        </div>
       </div>
     </section>
   );
