@@ -24,7 +24,7 @@ function Nav() {
           <li><Link to="/">Menu</Link></li>
           <li><Link to="/booking">Reservations</Link></li>
           <li><Link to="/">Order Online</Link></li>
-          <li><Link to="/">Login</Link></li>
+          <li><Link to="/login">Login</Link></li>
         </ul>
       </div>
     </nav>

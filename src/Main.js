@@ -5,6 +5,7 @@ import { useReducer } from 'react';
 import { initializeTimes, updateTimes } from './utils/timesReducer';
 import ConfirmedBooking from './pages/ConfirmedBooking';
 import { submitAPI } from './utils/tempAPI';
+import { LoginPage } from './pages/LoginPage';
 
 function Main() {
 
@@ -39,6 +40,7 @@ function Main() {
           }
          />
          <Route path="/confirmed" element={<ConfirmedBooking />} />
+         <Route path="/login" element={<LoginPage/>} />
       </Routes>
     </main>
   );

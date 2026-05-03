@@ -1,0 +1,129 @@
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #a0a09c;
+  padding: 1rem;
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+
+.user-input,
+.password-input {
+  height: 44px;
+  padding: 0 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-input:focus,
+.password-input:focus {
+  border-color: #495E57;
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.12);
+  background: #fff;
+}
+
+.user-input::placeholder,
+.passwoed-input::placeholder {
+  color: #aaa;
+}
+
+
+.sign-in-btn {
+  height: 44px;
+  background-color: #495E57;
+  color: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 0.25rem;
+}
+
+.sign-in-btn:hover {
+  background-color: #3a4d47;
+}
+
+.sign-in-btn:active {
+  transform: scale(0.98);
+}
+
+.sign-up-para {
+  margin-top: 1.25rem;
+  font-size: 16px;
+  color: #666;
+}
+
+.sign-up-para a {
+  color: #495E57;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.sign-up-para a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .login-form {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .login-container {
+    justify-content: flex-start;
+    padding-top: 3rem;
+    background-color: #ffffff;
+  }
+
+  .login-form {
+    padding: 1.5rem 1.25rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .user-input,
+  .passwoed-input {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .sign-in-btn {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .sign-up-para {
+    font-size: 14px;
+    text-align: center;
+  }
+}
